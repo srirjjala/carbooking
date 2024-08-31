@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Agency</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header ul {
+            list-style: none;
+            display: flex;
+        }
+
+        header ul li {
+            margin-left: 20px;
+        }
+
+        header ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .hero {
+            background: url('car-background.jpg') no-repeat center center/cover;
+            height: 100vh;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            background: #ff4c4c;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background: #e04343;
+        }
+
+        .about, .services, .fleet, .contact {
+            padding: 60px 0;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+        }
+
+        .services ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            font-size: 1.2rem;
+        }
+
+        .services ul li {
+            margin-bottom: 15px;
+        }
+
+        .car-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .car-item {
+            width: 30%;
+            text-align: center;
+        }
+
+        .car-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .contact-details {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .contact-details p {
+            font-size: 1.1rem;
+            margin: 10px 0;
+        }
+
+        .whatsapp-link {
+            display: inline-block;
+            background-color: #25D366;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 700;
+            margin-top: 10px;
+        }
+
+        .whatsapp-link:hover {
+            background-color: #1DA851;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <h1 class="logo">QuickRent</h1>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#fleet">Fleet</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Your Journey Starts Here</h2>
+            <p>Find the perfect car for your next adventure</p>
+            <a href="#fleet" class="btn">Book Now</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>
+                QuickRent is your go-to car rental agency, dedicated to making your travel experience seamless and enjoyable. 
+                We offer an extensive range of vehicles, from compact cars ideal for city driving to luxurious SUVs perfect 
+                for long road trips. What sets us apart is our commitment to customer satisfaction, offering not just vehicles 
+                but also professional drivers to ensure your journey is smooth and stress-free.
+            </p>
+            <p>
+                Whether you need a car for a day or a driver for a month, QuickRent has you covered. Our drivers are highly experienced, 
+                vetted professionals who know the roads inside out, providing safe and reliable transport. With QuickRent, you can 
+                sit back, relax, and enjoy the ride.
+            </p>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <ul>
+                <li><strong>Wide Range of Vehicles:</strong> Choose from economy cars, SUVs, luxury vehicles, and more to suit your travel needs.</li>
+                <li><strong>Cars with Professional Drivers:</strong> We offer cars with experienced drivers who are familiar with the best routes and driving conditions. Travel comfortably and safely without the hassle of driving yourself.</li>
+                <li><strong>Driver-Only Service:</strong> If you have your own vehicle but need a driver, we provide experienced drivers who can assist you, ensuring a worry-free journey.</li>
+                <li><strong>Goods and Services Transportation:</strong> We handle the transportation of goods and services from one place to another. Whether it's moving items for a business or personal needs, we ensure safe and efficient delivery.</li>
+                <li><strong>Affordable Prices:</strong> Competitive pricing to fit your budget, with flexible rental packages tailored to your needs.</li>
+                <li><strong>24/7 Support:</strong> We're here to help whenever you need us, offering round-the-clock customer support for all your queries and concerns.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="fleet" class="fleet">
+        <div class="container">
+            <h2>Our Fleet</h2>
+            <div class="car-grid">
+                <div class="car-item">
+                    <img src="car1.jpg" alt="Economy Car">
+                    <h3>Economy Car</h3>
+                    <p>Perfect for city driving.</p>
+                </div>
+                <div class="car-item">
+                    <img src="car2.jpg" alt="SUV">
+                    <h3>SUV</h3>
+                    <p>Great for family trips.</p>
+                </div>
+                <div class="car-item">
+                    <img src="car3.jpg" alt="Luxury Car">
+                    <h3>Luxury Car</h3>
+                    <p>Travel in style and comfort.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Ready to hit the road? Get in touch with us today!</p>
+
+            <div class="contact-details">
+                <p><strong>Email:</strong> gopalreddymuduganti@gmail.com</p>
+                <p><strong>Phone 1:</strong> 9989952788</p>
+                <p><strong>Phone 2:</strong> 8008034511</p>
+                <a href="https://wa.me/918008034511" class="whatsapp-link" target="_blank">Chat on WhatsApp</a>
+            </div>
+        </div>
+    </section>
+<!-- Start of Tawk.to Script -->
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/your_property_id/default';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script>
+    <!-- End of Tawk.to Script -->
+</body>
+</html>
